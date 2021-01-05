@@ -4,7 +4,7 @@
 
 <br />
 
-TeenyChef is a self-hosted kitchen helper built with React, and NodeJS which allows you to keep track of your daily cooking and help with dinner choices.
+TeenyChef is a self-hosted kitchen helper built with React and Python which allows you to keep track of your daily cooking and help with dinner choices.
 
 ## Why did we create TeenyChef?
 
@@ -26,8 +26,15 @@ TeenyChef is a growing project which has a large road-map of goals, some of our 
 
 ## Technology Stack
 
-- ReactJS
-- NodeJS
+### Front-end
+
+- React
 - TailwindCSS
 - Bulma
-- MongoDB
+
+### Back-end
+
+- [FastAPI](https://github.com/tiangolo/fastapi)
+- [MkDocs](https://www.mkdocs.org/)
+- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+- [Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
