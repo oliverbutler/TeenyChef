@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from "components/Navbar";
@@ -8,9 +8,18 @@ import Supplies from "components/Supplies";
 import Settings from "components/Settings";
 
 const App: React.FC = () => {
+  useEffect(() => {
+    const html = document.querySelector("html");
+
+    if (html) {
+      html.classList.add("dark");
+      html.style.backgroundColor = "black";
+    }
+  }, []);
+
   return (
     <Router>
-      <div className="dark">
+      <div>
         <Navbar />
         <Switch>
           <div className="container mx-auto my-5">
